@@ -1,0 +1,32 @@
+:root{
+  --brand-primary: #7b3cff;
+  --brand-secondary: #c78aff;
+  --bg-dark-1: #1a0028;
+  --bg-dark-2: #3b0066;
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.1);
+  --text-light: #fcfcfc;
+  --muted: rgba(255,255,255,0.85);
+  --success: #3ee8a6;
+  --danger: #ff6b6b;
+  --radius-lg: 18px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Light theme override */
+body.light {
+  --brand-primary: #6a3cff;
+  --brand-secondary: #a36bff;
+  --bg-dark-1: #f8f7ff;
+  --bg-dark-2: #efeaff;
+  --glass: rgba(255,255,255,0.9);
+  --glass-border: rgba(0,0,0,0.06);
+  --text-light: #0f0f19;
+  --muted: rgba(0,0,0,0.6);
+  --shadow-soft: 0 8px 20px rgba(16,24,40,0.06);
+}
+
+/* Base resets for brand */
+body { font-family: 'Poppins', system-ui, sans-serif; background: linear-gradient(135deg, var(--bg-dark-1), var(--bg-dark-2)); color:var(--text-light); }
+a { color: inherit; }

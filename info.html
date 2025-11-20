@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Information — Ahmed Ashref</title>
+
+  <!-- الخطوط والآيقونات -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b6f6d2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- ملفات CSS -->
+  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Splash / Entry animation -->
+  <div id="splash" class="splash">
+    <div class="splash-inner">
+      <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tfb3estd.json" background="transparent" speed="1" style="width:120px;height:120px;" autoplay></lottie-player>
+      <h2>Ahmed Ashref</h2>
+    </div>
+  </div>
+   
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="nav">
+    <div class="nav-left">
+      <a class="logo" href="index.html">Ahmed Ashref</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fa fa-arrow-left"></i> Back</a>
+    </nav>
+    <div class="nav-right">
+      <button id="themeToggleTop" class="icon-btn"><i class="fa fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="card glass fade-up">
+      <div class="profile-wrap small">
+        <img src="profile.jpg" alt="Ahmed Ashref" class="profile-img" />
+      </div>
+
+      <h1>My Information</h1>
+      <pre class="lead">I am the Beginning and I am the End and I have no End
+        𝖫𝗂𝗏𝖾 𓏺 𝖤𝗀𝗒𝗉𝗍
+        𝖬𝗒 𝖠𝗀𝖾 𓏺 20
+        𝖬𝗒 𝖡𝗋𝗂𝗍𝗁 𓏺 25/12
+        My Life 𓏺 BMW</pre>
+    
+
+    
+
+      <!-- روابط الأزرار -->
+      <div class="links-box">
+        <a class="btn soft" href="https://t.me/uvvra"target="_blank"><i class="fa fa-telegram"></i> My Telegram</a>
+        <a class="btn soft" href="https://www.instagram.com/x66af"target="_blank"><i class="fa fa-instagram"></i> My Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year_info"></span> — Ahmed Ashref • All rights reserved</div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // تحديث السنة تلقائيًا
+    document.getElementById('year_info').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
